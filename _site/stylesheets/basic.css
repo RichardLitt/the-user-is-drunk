@@ -1,0 +1,114 @@
+body {
+  display: block;
+  margin: 0;
+  background: #fff url('couch.jpg') fixed;
+  /*background-position: contain;*/
+  background-size: cover;
+}
+/*video#maya {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+}*/
+h1 {
+  font-family: Helvetica Neue, Helvetica, Arial, Times;
+  font-weight: 200;
+  line-height: 30px;
+  color: white;
+  padding-bottom: 30px;
+  /*padding: 20px 0px 40px 100px;*/
+}
+.text {
+  position: relative;
+  z-index: 10;
+  top: 0;
+  left: 100px;
+  color: white;
+  padding: 30px 50px 100px 50px;
+  padding-right: 30px;
+  padding-bottom: 100px;
+  background-color: rgba(0,0,0,.7);
+  max-width: 500px;
+}
+p {
+  font-family: Helvetica Neue, Helvetica, Arial, Times;
+  font-weight: 200;
+  line-height: 30px;
+  color: white; 
+}
+h3 {
+  font-size: 30px;
+}
+p {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 28px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  margin: 10px 0px;
+  background: rgba(255,255,255,0);
+}
+
+a {
+  color: white;
+  /*padding: 3px 10px;*/
+  /*border: 1px solid #5b5b5b;*/
+  /*border-radius: 5px;*/
+  text-decoration: none;
+  background-color: rgba(255,255,255,.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+a:hover, a:active {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(255,255,255,.2);
+  /*border: 1px solid #909;*/
+}
+
+.website {
+  padding: 2px;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,.3);
+}
+
+.intern {
+  padding-bottom: 30px;
+  font-size: 14px;
+}
+
+input:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+input[type='submit'] {
+  border: none;
+  background-color: rgba(255,255,255,.5);
+}
+
+input[type='submit']:hover {
+  background-color: rgba(255,255,255,.2);
+  border: none;
+}
