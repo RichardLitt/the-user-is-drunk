@@ -24,7 +24,7 @@ h1 {
   top: 0;
   left: 100px;
   color: white;
-  padding: 30px 0px 50px 50px;
+  padding: 30px 50px 100px 50px;
   background-color: rgba(0,0,0,.7);
   max-width: 500px;
 }
