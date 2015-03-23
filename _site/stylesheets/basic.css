@@ -13,7 +13,7 @@ body {
 h1 {
   font-family: Helvetica Neue, Helvetica, Arial, Times;
   font-weight: 200;
-  line-height: 30px;
+  line-height: 36px;
   color: white;
   padding-bottom: 30px;
   /*padding: 20px 0px 40px 100px;*/
@@ -27,6 +27,11 @@ h1 {
   padding: 30px 50px 100px 50px;
   background-color: rgba(0,0,0,.7);
   max-width: 500px;
+}
+
+.cta {
+  text-align: center;
+  padding-top: 20px;
 }
 
 @media all and (max-width: 767px) {
@@ -79,15 +84,16 @@ a:hover, a:active {
   /*border: 1px solid #909;*/
 }
 
-.website {
-  padding: 2px;
-  border-radius: 2px;
-  background-color: rgba(255,255,255,.3);
-}
 
 .intern {
   padding-bottom: 30px;
   font-size: 14px;
+}
+
+.website, .intern a {
+  padding: 2px;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,.3);
 }
 
 input:hover {
