@@ -2,6 +2,7 @@ body {
   display: block;
   margin: 0;
   background: #fff url('couch.jpg') fixed;
+  background-position: top right;
   /*background-position: contain;*/
   background-size: cover;
 }
@@ -31,7 +32,26 @@ h1 {
 
 .cta {
   text-align: center;
-  padding-top: 20px;
+  margin-top: 50px;
+}
+
+.cta a {
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 40px;
+  background: #06C;
+  color: white;
+  border-color: #105296;
+  border-bottom: 2px;
+}
+
+.cta a:visited {
+  background: #0066cc;
+}
+
+.cta a:hover, a:focus {
+  background-color: #1a7de6;
+  text-decoration: none;
 }
 
 @media all and (max-width: 767px) {
@@ -43,28 +63,16 @@ h1 {
   }
 }
 
-p {
-  font-family: Helvetica Neue, Helvetica, Arial, Times;
-  font-weight: 200;
-  line-height: 30px;
-  color: white; 
-}
 h3 {
   font-size: 30px;
 }
+
 p {
+  color: white; 
+  font-family: Helvetica Neue, Helvetica, Arial, Times;
   font-size: 18px;
   font-weight: 200;
   line-height: 28px;
-}
-
-input {
-  padding: 10px;
-  border: 1px solid white;
-  border-radius: 5px;
-  color: white;
-  margin: 10px 0px;
-  background: rgba(255,255,255,0);
 }
 
 a {
@@ -77,13 +85,13 @@ a {
   padding: 5px 10px;
   border-radius: 5px;
 }
+
 a:hover, a:active {
   text-decoration: none;
   color: white;
   background-color: rgba(255,255,255,.2);
   /*border: 1px solid #909;*/
 }
-
 
 .intern {
   padding-bottom: 30px;
@@ -94,6 +102,19 @@ a:hover, a:active {
   padding: 2px;
   border-radius: 2px;
   background-color: rgba(255,255,255,.3);
+}
+
+
+input {
+  background: rgba(255,255,255,0);
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  font-size: 14px;
+  margin: 10px 0px;
+  width: 300px;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
 
 input:hover {
@@ -121,6 +142,7 @@ input[type='submit'] {
   border: none;
   background-color: rgba(255,255,255,.5);
   margin-bottom: 30px;
+  text-align: left;
 }
 
 input[type='submit']:hover {
