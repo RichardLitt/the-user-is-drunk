@@ -98,7 +98,7 @@ a:hover, a:active {
   font-size: 14px;
 }
 
-.website, .intern a {
+.website, .intern a, li a {
   padding: 2px;
   border-radius: 2px;
   background-color: rgba(255,255,255,.3);
