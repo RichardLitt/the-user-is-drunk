@@ -67,7 +67,7 @@ h3 {
   font-size: 30px;
 }
 
-p {
+p, li {
   color: white; 
   font-family: Helvetica Neue, Helvetica, Arial, Times;
   font-size: 18px;
