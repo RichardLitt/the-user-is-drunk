@@ -1,6 +1,33 @@
 body {
+  margin: 0px;
+  background-color: #111;
+}
+
+.banner {
+  text-align: center;
+  margin: 20px;
+  color: white;
+  font-size: 18px;
+  font-family: Helvetica Neue, Helvetica, Arial, Times;
+}
+
+.banner a {
+  background-color: #111;
+  padding: 0px;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.banner a:hover, .banner a:active, .banner a:visited {
+  background-color: #111;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.wrap {
+  border-top: 1px solid #fff;
   display: block;
-  margin: 0;
+  margin: 0px;
   background: #fff url('couch.jpg') fixed;
   background-position: top right;
   /*background-position: contain;*/
