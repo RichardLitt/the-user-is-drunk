@@ -2,6 +2,7 @@ let gulp = require('gulp');
 let cleanCSS = require('gulp-clean-css');
 let uglify = require('gulp-uglify');
 let rename = require('gulp-rename');
+let imagemin = require('gulp-imagemin');
 
 gulp.task('minify-css', () => {
     return gulp.src('assets/stylesheets/*.css')
@@ -16,3 +17,10 @@ gulp.task('uglify', function() {
         .pipe(gulp.dest('javascripts'));
 });
 
+gulp.task('imagin', () =>
+gulp.src('assets/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('stylesheets'))
+);
+
+gulp.task('default', ['minify-css', 'uglify', 'imagin']);
