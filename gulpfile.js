@@ -1,5 +1,7 @@
 let gulp = require('gulp');
 let cleanCSS = require('gulp-clean-css');
+let uglify = require('gulp-uglify');
+let rename = require('gulp-rename');
 
 gulp.task('minify-css', () => {
     return gulp.src('assets/stylesheets/*.css')
@@ -7,4 +9,10 @@ gulp.task('minify-css', () => {
         .pipe(gulp.dest('stylesheets'));
 });
 
-gulp.task('default', ['minify-css']);
+gulp.task('uglify', function() {
+    return gulp.src('assets/javascripts/**/*.js')
+        .pipe(uglify())
+        .pipe(rename({extname: ".min.js"}))
+        .pipe(gulp.dest('javascripts'));
+});
+

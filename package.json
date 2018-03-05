@@ -6,7 +6,9 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.9.2"
+    "gulp-clean-css": "^3.9.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
   },
   "repository": {
     "type": "git",
