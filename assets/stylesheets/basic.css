@@ -25,12 +25,10 @@ body {
 }
 
 .wrap {
+  /*background-image controlled in media-queries*/
   border-top: 1px solid #fff;
   display: block;
   margin: 0px;
-  background: #fff url('couch.jpg') fixed;
-  background-position: top right;
-  /*background-position: contain;*/
   background-size: cover;
 }
 /*video#maya {
@@ -176,4 +174,32 @@ input[type='submit'] {
 input[type='submit']:hover {
   background-color: rgba(255,255,255,.2);
   border: none;
+}
+
+@media (max-width: 576px) {
+  .wrap{
+    background: #fff url('couch-s.jpg') fixed;
+    background-position: top;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .wrap{
+    background: #fff url('couch-m.jpg') fixed;
+    background-position: top right;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 998px)  {
+  .wrap{
+    background: #fff url('couch-l.jpg') fixed;
+    background-position: top right;
+  }
+}
+
+@media (min-width: 999px) {
+  .wrap{
+    background: #fff url('couch.jpg') fixed;
+    background-position: top right;
+  }
 }
