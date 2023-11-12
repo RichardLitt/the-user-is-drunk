@@ -3,19 +3,19 @@ import cleanCSS from 'gulp-clean-css';
 import imagemin from 'gulp-imagemin';
 
 function minifyCSS() {
-    return gulp.src('assets/stylesheets/*.css')
+    return gulp.src('stylesheets/*.css')
                .pipe(cleanCSS())
-               .pipe(gulp.dest('stylesheets'));
+               .pipe(gulp.dest('assets/stylesheets'));
 }
 
 function imageMin() {
     return gulp.src('assets/images/*')
                .pipe(imagemin())
-               .pipe(gulp.dest('images'));
+               .pipe(gulp.dest('assets/images'));
 }
 
 function watchFiles() {
-    gulp.watch('assets/stylesheets/*.css', minifyCSS);
+    gulp.watch('stylesheets/*.css', minifyCSS);
 }
 
 export default gulp.series(minifyCSS, imageMin);
