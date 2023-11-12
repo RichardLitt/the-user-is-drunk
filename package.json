@@ -2,6 +2,7 @@
   "name": "the-user-is-drunk",
   "version": "1.0.0",
   "description": "The user is drunk",
+  "type": "module",
   "main": "gulpfile.js",
   "devDependencies": {
     "gulp": "^4.0.2",

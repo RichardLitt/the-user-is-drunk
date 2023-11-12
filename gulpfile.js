@@ -1,21 +1,26 @@
-let gulp = require('gulp')
-let cleanCSS = require('gulp-clean-css')
-let imagemin = require('gulp-imagemin')
+import gulp from 'gulp';
+import cleanCSS from 'gulp-clean-css';
+import imagemin from 'gulp-imagemin';
 
-gulp.task('minify-css', () =>
-  gulp.src('assets/stylesheets/*.css')
-    .pipe(cleanCSS())
-    .pipe(gulp.dest('stylesheets'))
-)
+function minifyCSS() {
+    return gulp.src('assets/stylesheets/*.css')
+               .pipe(cleanCSS())
+               .pipe(gulp.dest('stylesheets'));
+}
 
-gulp.task('imagin', () =>
-  gulp.src('assets/images/*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('stylesheets'))
-)
+function imageMin() {
+    return gulp.src('assets/images/*')
+               .pipe(imagemin())
+               .pipe(gulp.dest('images'));
+}
 
-gulp.task('default', ['minify-css', 'imagin'])
+function watchFiles() {
+    gulp.watch('assets/stylesheets/*.css', minifyCSS);
+}
 
-gulp.task('watch', () =>
-  gulp.watch('assets/stylesheets/*.css', ['minify-css'])
-)
+export default gulp.series(minifyCSS, imageMin);
+export {
+    minifyCSS,
+    imageMin,
+    watchFiles as watch,
+};
