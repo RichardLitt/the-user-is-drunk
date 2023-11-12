@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "The user is drunk",
   "main": "gulpfile.js",
-  "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.9.2",
-    "gulp-imagemin": "^4.1.0"
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^9.0.0"
   },
   "repository": {
     "type": "git",
